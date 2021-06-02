@@ -1,8 +1,10 @@
 import React, { FC } from 'react';
 import logo from '../../assets/images/logo.png';
+import { useDispatch } from 'react-redux';
+import { push } from 'connected-react-router';
 
 const Header: FC = () => {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   return (
     <>
@@ -12,7 +14,7 @@ const Header: FC = () => {
           src={logo}
           alt="logo"
           width="128px"
-          onClick={() => alert('hello')}
+          onClick={() => dispatch(push('/'))}
         />
         <nav></nav>
       </header>
