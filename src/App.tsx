@@ -3,13 +3,14 @@ import './assets/reset.css';
 import './assets/style.css';
 import { Header } from '../src/components/Header';
 import { Footer } from '../src/components/Footer';
+import Router from '../src/Router';
 
 const App: FC = () => {
   return (
     <>
       <Header />
       <main className="c-main bg-color">
-        <h1 className="u-text__headline u-text-center">hello</h1>
+        <Router />
       </main>
       <Footer />
     </>
