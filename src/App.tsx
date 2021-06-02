@@ -1,8 +1,19 @@
 import React, { FC } from 'react';
-import './App.css';
+import './assets/reset.css';
+import './assets/style.css';
+import { Header } from '../src/components/Header';
+import { Footer } from '../src/components/Footer';
 
 const App: FC = () => {
-  return <h1>hello</h1>;
+  return (
+    <>
+      <Header />
+      <main className="c-main bg-color">
+        <h1 className="u-text__headline u-text-center">hello</h1>
+      </main>
+      <Footer />
+    </>
+  );
 };
 
 export default App;
